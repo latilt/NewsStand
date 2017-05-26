@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>news</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+    <div class="wrap">
+    	<header>
+    		<ul>
+    			<li class="press">전체언론사</li>
+    			<li class="myNews">my뉴스</li>
+    		</ul>
+
+    		<div class="btn" style="display: none">
+    			<div class="left"><a href="#"><</a></div>
+    			<div class="right"><a href="#">></a></div>
+    		</div>
+
+        <div class="paging" style="display: none">
+          <b class="current">1</b>
+          /
+          <b class="total">4</b>
+        </div>
+
+    	</header>
+      <section class="mainPress" style="display: block">
+        <ul>
+          <!--li><img src={imgurl} a=""></li-->
+          <li><p>Empty!</p></li>
+        </ul>
+      </section>
+    	<section class="mainArea" style="display: none">
+    		<nav>
+    			<ul>
+    			</ul>
+    		</nav>
+    		<section class="content">
+    		</section>
+    	</section>
+    </div>
+
+
+
+	<script type="template" id="newsTemplate">
+		<h4 class="title">
+			<span class="newsName">{title}</span> <button><a href="#">X</a></button>
+		</h4>
+		<div class="newsList">
+			<img src={imgurl} alt="">
+			<ul>
+				{newsList}
+			</ul>
+		</div>
+	</script>
+
+  <script src="utility.js"></script>
+  <script src="main.js"></script>
+    </body>
+</html>
